@@ -1,0 +1,21 @@
+[package]
+name = "optimise_f_mul"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-ff = { version = "0.4", default-features = false, features = ["parallel"] }
+ark-ec = { version = "0.4", default-features = false, features = ["parallel"]  }
+ark-serialize = { version = "0.4", default-features = false, features = ["derive"] }
+ark-std = { version = "0.4", default-features = false, features = ["parallel"] }
+ark-bls12-381  = { version = "0.4", default-features = false, features = ["scalar_field","curve"] }
+ark-bn254 = { version = "0.4", default-features =  false, features = ["scalar_field","curve"] }
+ark-groth16 = { version = "0.4", default-features = false, features = ["parallel"] }
+ark-snark = { version =  "0.4" }
+ark-r1cs-std = { version = "0.4", default-features = false, features = ["parallel"]  }
+ark-poly = { version = "0.4", default-features = false, features = ["parallel"]  }
+ark-relations = { version = "0.4"  }
+ark-crypto-primitives = { version = "0.4", default-features = false, features = ["r1cs","sponge","snark","merkle_tree","prf","parallel"] }
+num-bigint = { version = "0.4.4", default-features = false, features = ["serde"] }
+rand = "0.8.5"
+hex = "0.4.3"
